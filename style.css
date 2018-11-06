@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  text-transform: uppercase;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #fff;
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(assets/0.png);
+  background-size: cover;
+  background-position: bottom; 
+}
+
+nav {
+  color: #fff;
+  position: fixed;
+  padding: 15px;
+  font-family: 'Spicy Rice', cursive;
+}
+
+a {
+  display: block;
+  font-size: 1.3rem;
+  color: #3636B5;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+
+#watch {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+iframe:first-child {
+  margin: 0 auto;
+}
+
+iframe:not(:first-child) {
+  margin: 10px;
+}
+
+article {
+  width: 100%;
+  height: 60vh;
+  
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.gig {
+  display: grid;
+  margin: 20px 0;
+  padding-right: 50px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: 
+    'date venue'
+    'date city';
+  cursor: pointer;
+}
+
+.gig:hover {
+  color: #3636B5;
+}
+.date { 
+  grid-area: date;
+  margin: 0;
+  font-size: 2rem;
+  padding: 5px;
+  text-align: right;
+}
+.venue { 
+  grid-area: venue;
+  margin: 0;
+  text-align: right;
+}
+.city {
+  grid-area: city;
+  margin:0;
+  text-align: right;
+}
+
+#shop {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 30% 30% 30%;
+  grid-auto-columns: 30%;
+  grid-auto-rows: 350px;
+  margin: 50px;
+  right: 0;
+}
+
+.item:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-image: url("https://static1.squarespace.com/static/555d2d01e4b016bdc9570a17/57f46f05579fb32a7e65b321/5b6c7e3840ec9a40bde4e0ed/1540961529786/");
+  background-size: cover;
+  background-position: center;
+}
+.item:nth-child(2) {
+  grid-column: 2 / 3 ;
+  grid-row: 1;
+  background-image: url("https://static1.squarespace.com/static/555d2d01e4b016bdc9570a17/57f46f05579fb32a7e65b321/5b6c811c03ce641a10e6325c/1540961524108/");
+  background-size: cover;
+  background-position: center;
+}
+.item:nth-child(3) {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  background-image: url("https://static1.squarespace.com/static/555d2d01e4b016bdc9570a17/57f46f05579fb32a7e65b321/5b6c802a032be43866f404ea/1540961518415/");
+  background-size: cover;
+  background-position: center;
+}
+
+.item:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  background-image: url("assets/s2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.item:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  background-image: url("https://static1.squarespace.com/static/555d2d01e4b016bdc9570a17/57f46f05579fb32a7e65b321/5b6c82098a922d83a728e34c/1540961506504/");
+  background-size: cover;
+  background-position: center;
+}
+
+.item:nth-child(6) {
+  grid-column: 3 / 4;
+  grid-row: 2;
+  background-image: url("https://static1.squarespace.com/static/555d2d01e4b016bdc9570a17/57f46f05579fb32a7e65b321/5b6c6cccf950b7b1ba33b83d/1540961480097/");
+  background-size: cover;
+  background-position: center;
+}
+.item:nth-child(7) {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  background-image: url("https://static1.squarespace.com/static/555d2d01e4b016bdc9570a17/57f46f05579fb32a7e65b321/5b6c6e5321c67c3d1c604a47/1540961432063/");
+  background-size: cover;
+  background-position: center;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#social a {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+#social a:hover {
+  transform: scale(1.5);
+}
+
+svg {
+  color: #fff;
+}
